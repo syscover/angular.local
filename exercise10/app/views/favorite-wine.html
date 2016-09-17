@@ -1,0 +1,16 @@
+<button (click)="setVisibleFavoriteWine(true)" [class.showing-data]="viewData === true">Mostrar vino favorito</button>
+<button (click)="setVisibleFavoriteWine(false)" [class.showing-data]="viewData === false">Ocultar vino favorito</button>
+
+<div *ngIf="viewData === true">
+    <h1>Mi vino favorito es: {{ favoriteWine.name }}</h1>
+    <ul>
+        <li><span class="label">Name:</span> {{ favoriteWine.name }}</li>
+        <li><span class="label">Year:</span> {{ favoriteWine.year }}</li>
+        <li><span class="label">DO:</span> {{ favoriteWine.dO }}</li>
+        <li><span class="label">Tasting note:</span> {{ favoriteWine.tastingNote }}</li>
+    </ul>
+    <p>
+        Change name favorite wine
+        <input type="text" [(ngModel)]="favoriteWine.name">
+    </p>
+</div>

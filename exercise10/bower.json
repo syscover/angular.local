@@ -1,0 +1,21 @@
+{
+  "name": "pulsar",
+  "description": "pulsar modules",
+  "main": "index.html",
+  "authors": [
+    "Jose Carlos R. Palacín (Syscover) <cpalacin@syscover.com>"
+  ],
+  "license": "ISC",
+  "homepage": "syscover.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7"
+  }
+}

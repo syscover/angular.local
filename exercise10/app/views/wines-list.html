@@ -1,0 +1,10 @@
+<!-- with # definimos el alias para llamar al componente y sus metodos desde la vista -->
+<favorite-wine #favoriteWine></favorite-wine>
+<hr>
+{{ testService }}
+<ul *ngFor="let wine of wines" (click)="favoriteWine.setFavoriteWine(wine)" class="wine-item-list">
+    <li [class.clicked]="favoriteWine.favoriteWine.id === wine.id"><span class="label">Name:</span> {{ wine.name }}</li>
+    <li><span class="label">Year:</span> {{ wine.year }}</li>
+    <li><span class="label">DO:</span> {{ wine.dO }}</li>
+    <li><span class="label">Tasting note:</span> {{ wine.tastingNote }}</li>
+</ul>

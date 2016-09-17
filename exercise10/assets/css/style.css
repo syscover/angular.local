@@ -1,0 +1,24 @@
+
+body{
+    font-family: "source_sans", "Lucida Grande", "Lucida Sans", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.label{
+    font-weight:bold;
+}
+
+.showing-data{
+    display: none;
+}
+
+.wine-item-list{
+    cursor: pointer;
+}
+
+.clicked{
+    font-size: 30px;
+}

@@ -1,0 +1,15 @@
+
+<!-- Los () va de la vista al comonente y los [] va del componente a la vista, determinan la dirección de flujo de la vista al componente o viceversa -->
+<!-- <wines-list></wines-list> -->
+
+<nav>
+    <ul>
+        <li><a [routerLink]="['Wines']">Inicio</a></li>
+        <li><a href="">Add wine</a></li>
+        <li><a [routerLink]="['Contact']">Contact</a></li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>
+<hr>
+<footer></footer>
