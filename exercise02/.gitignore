@@ -39,7 +39,6 @@
 /node_modules/*
 /typings/*
 /bower_components/*
-npm-debug.log
 
 # -- Laravel -----------------------------------------
 Homestead.yaml
