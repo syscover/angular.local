@@ -14,12 +14,16 @@ var AppComponent = (function () {
     function AppComponent(heroService) {
         this.heroService = heroService;
         this.title = 'Tour of Heroes';
-        this.heroes = this.heroService.getHeroes();
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.getHeroes();
+    };
     // NOS HEMOS QUEDADO AQUI!!!
-    // getHeroes(): void {
-    //     this.heroes = this.heroService.getHeroes();
-    // }
+    AppComponent.prototype.getHeroes = function () {
+        var _this = this;
+        this.heroService.getHeroes().then(function (heroes) { return _this.heroes = heroes; });
+        //this.heroes = this.heroService.getHeroes();
+    };
     AppComponent.prototype.onSelect = function (hero) {
         this.selectedHero = hero;
     };
