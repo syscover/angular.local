@@ -27,6 +27,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
+            // imports, se importan módulos para tenter disponibles sus directivas para las vistas de los componentes (ngModel (FormsModule), ngFor(BrowserModule))
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
@@ -34,6 +35,7 @@ var AppModule = (function () {
                 angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
                 app_routing_1.routing
             ],
+            // se declaran componentes para tener sus directivas disponibles en el resto de componentes
             declarations: [
                 app_component_1.AppComponent,
                 dashboard_component_1.DashboardComponent,

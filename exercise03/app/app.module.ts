@@ -19,6 +19,8 @@ import { HeroSearchComponent } from './hero-search.component';
 
 
 @NgModule({
+
+    // imports, se importan módulos para tenter disponibles sus directivas para las vistas de los componentes (ngModel (FormsModule), ngFor(BrowserModule))
     imports: [
         BrowserModule,
         FormsModule,
@@ -27,6 +29,7 @@ import { HeroSearchComponent } from './hero-search.component';
         InMemoryWebApiModule.forRoot(InMemoryDataService),
         routing
     ],
+    // se declaran componentes para tener sus directivas disponibles en el resto de componentes
     declarations: [
         AppComponent,
         DashboardComponent,

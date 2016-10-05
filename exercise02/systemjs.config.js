@@ -4,6 +4,9 @@
  */
 (function (global) {
     System.config({
+
+        //baseURL: '/exercise02', // set base path to application
+
         paths: {
             // paths serve as alias
             'npm:': 'node_modules/'
