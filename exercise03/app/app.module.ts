@@ -10,6 +10,7 @@ import { CoreModule }       from './core/core.module';
 
 /* Routing Module */
 import { AppRoutingModule } from './app-routing.module';
+import {AppRoutingModuleTest} from "./app-routing-test.module";
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     CoreModule,
 */
     CoreModule.forRoot({userName: 'Miss Marple'}),
-    AppRoutingModule
+    AppRoutingModule,
+      AppRoutingModuleTest
   ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]

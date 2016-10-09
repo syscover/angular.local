@@ -11,10 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 exports.routes = [
-    { path: '', redirectTo: 'contact', pathMatch: 'full' },
-    { path: 'contact', loadChildren: 'app/contact/contact.module#ContactModule' },
-    { path: 'crisis', loadChildren: 'app/crisis/crisis.module#CrisisModule' },
-    { path: 'heroes', loadChildren: 'app/hero/hero.module#HeroModule' }
+    {
+        path: '', redirectTo: 'contact', pathMatch: 'full'
+    },
+    {
+        path: 'contact', loadChildren: 'app/contact/contact.module#ContactModule'
+    },
+    {
+        path: 'crisis', loadChildren: 'app/crisis/crisis.module#CrisisModule'
+    }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

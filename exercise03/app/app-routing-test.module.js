@@ -9,31 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var crisis_list_component_1 = require('./crisis-list.component');
-var crisis_detail_component_1 = require('./crisis-detail.component');
-var crisis_service_1 = require('./crisis.service');
-var crisis_routing_module_1 = require('./crisis-routing.module');
-var CrisisModule = (function () {
-    function CrisisModule() {
+var router_1 = require('@angular/router');
+exports.routes = [
+    {
+        path: 'heroes', loadChildren: 'app/hero/hero.module#HeroModule'
     }
-    CrisisModule = __decorate([
+];
+var AppRoutingModuleTest = (function () {
+    function AppRoutingModuleTest() {
+    }
+    AppRoutingModuleTest = __decorate([
         core_1.NgModule({
-            imports: [
-                common_1.CommonModule,
-                crisis_routing_module_1.CrisisRoutingModule
-            ],
-            declarations: [crisis_detail_component_1.CrisisDetailComponent, crisis_list_component_1.CrisisListComponent],
-            providers: [crisis_service_1.CrisisService]
+            imports: [router_1.RouterModule.forRoot(exports.routes)],
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], CrisisModule);
-    return CrisisModule;
+    ], AppRoutingModuleTest);
+    return AppRoutingModuleTest;
 }());
-exports.CrisisModule = CrisisModule;
+exports.AppRoutingModuleTest = AppRoutingModuleTest;
 /*
 Copyright 2016 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 */ 
-//# sourceMappingURL=crisis.module.js.map
+//# sourceMappingURL=app-routing-test.module.js.map

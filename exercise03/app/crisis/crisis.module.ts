@@ -7,7 +7,10 @@ import { CrisisService }          from './crisis.service';
 import { CrisisRoutingModule }    from './crisis-routing.module';
 
 @NgModule({
-  imports:      [ CommonModule, CrisisRoutingModule ],
+  imports:      [
+      CommonModule,
+      CrisisRoutingModule
+  ],
   declarations: [ CrisisDetailComponent, CrisisListComponent ],
   providers:    [ CrisisService ]
 })

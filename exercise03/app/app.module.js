@@ -15,6 +15,7 @@ var app_component_1 = require('./app.component');
 var core_module_1 = require('./core/core.module');
 /* Routing Module */
 var app_routing_module_1 = require('./app-routing.module');
+var app_routing_test_module_1 = require("./app-routing-test.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,8 @@ var AppModule = (function () {
                     CoreModule,
                 */
                 core_module_1.CoreModule.forRoot({ userName: 'Miss Marple' }),
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                app_routing_test_module_1.AppRoutingModuleTest
             ],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
