@@ -11,18 +11,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of Heroes';
+        this.subtitle = '(Final)';
     }
     AppComponent = __decorate([
         core_1.Component({
-            moduleId: module.id,
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n        <nav>\n            <!-- \n                The Angular Router provides a routerLinkActive directive we can use to add a class to the HTML navigation element, \n                \u00BFde donde viene esa directiva? viene impl\u00EDcita?\n                \n                Aparentemente todas las directivas de angular se importan por defecto\n            -->\n            <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n            <a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n        </nav>\n        <router-outlet></router-outlet>\n    ",
-            styleUrls: ['app.component.css']
+            template: "\n    <app-title [subtitle]=\"subtitle\"></app-title>\n    <nav>\n      <a routerLink=\"contact\" routerLinkActive=\"active\">Contact</a>\n      <a routerLink=\"crisis\"  routerLinkActive=\"active\">Crisis Center</a>\n      <a routerLink=\"heroes\"  routerLinkActive=\"active\">Heroes</a>\n    </nav>\n    <router-outlet></router-outlet>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/ 
 //# sourceMappingURL=app.component.js.map
