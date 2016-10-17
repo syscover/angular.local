@@ -9,21 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var trans_component_1 = require("./trans.component");
-var AppModule = (function () {
-    function AppModule() {
+var TransComponent = (function () {
+    function TransComponent() {
+        this.translation = 'CCCCC';
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, trans_component_1.TransComponent],
-            bootstrap: [app_component_1.AppComponent]
+    TransComponent.prototype.ngOnInit = function () { };
+    __decorate([
+        core_1.Input, 
+        __metadata('design:type', String)
+    ], TransComponent.prototype, "key", void 0);
+    TransComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'trans',
+            template: '{{ translation }}'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], TransComponent);
+    return TransComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.TransComponent = TransComponent;
+//# sourceMappingURL=trans.component.js.map
