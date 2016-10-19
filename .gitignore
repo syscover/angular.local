@@ -79,6 +79,9 @@ Icon
 .Trashes
 
 # -- Editores -----------------------------------------
+# vs code
+.vscode
+
 # vim
 .*.sw[a-z]
 *.un~
